@@ -1,0 +1,19 @@
+---
+import {products} from "../../data.json"
+import Dinamico from "../components/Dinamico.jsx"
+---
+
+
+<div>
+<h1>ESTA ES LA RUTA NÚMERO 2</h1>
+
+<h1>ESTATICOS</h1>
+<ul>
+    <li>{products.name}</li>
+    <li>{products.price}</li>
+    <li>{products.description}</li>
+</ul>
+<br/>
+<Dinamico client:only/>
+
+</div>

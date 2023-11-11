@@ -1,0 +1,70 @@
+
+---
+import Card from "../components/Card.astro";
+import "../estilos.css"
+import gato from "../imagenes/gato.jpg"
+---
+
+
+<body>
+<div>
+<h1 class="prueba">HOLA MUNDO</h1>
+</div>
+<div class="caja1"></div>
+<div class="caja2"></div>
+<div class="caja3"></div>
+<Card />
+
+<a href="/rutaprueba">IR a ruta 2</a>
+
+<h1 class="Ejemplo-h1">ESTE ES MI EJEMPLO H1</h1>
+
+<div class="mi-componente">
+	<h1>Hola desde aquí</h1>
+	<p>Este es un ejemplo de Sass</p>
+</div>
+
+<img src={gato.src} loading="lazy"/>
+
+</body>
+
+
+
+
+<style>
+	.prueba{
+		font-size: 90px;
+		color: red;
+	}
+
+	.caja1{
+		width: 200px;
+		height: 200px;
+		background-color: blue;
+	}
+	.caja2{
+		width: 200px;
+		height: 200px;
+		background-color: rgb(219, 48, 207);
+	}
+	.caja3{
+		width: 200px;
+		height: 200px;
+		background-color: rgb(0, 206, 62);
+	}
+</style>
+
+
+<style lang="scss">
+.mi-componente{
+background-color: #348983;
+}
+
+h1{
+	font-size: 24px;
+}
+
+p{
+	font-size: 16px;
+}
+</style>
